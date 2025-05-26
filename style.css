@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#statusMessage {
+    color: #555;
+    font-size: 14px;
+    min-height: 20px; /* 确保有空间显示消息 */
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    transition: width 0.4s ease-in-out;
+}
